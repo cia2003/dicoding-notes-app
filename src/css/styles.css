@@ -1,0 +1,142 @@
+@font-face {
+    font-family: 'Outfit';
+    src: url('/assets/fonts/outfit/Outfit-VariableFont_wght.ttf');
+    font-style: normal;
+    font-weight: normal;
+}
+
+:root {
+    --Ivory-Mist: #F1EFEC;
+    --Soft-Mushroom: #D4C9BE;
+    --Midnight-Blue: #123458;
+    --Charcoal-Black: #030303;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 100vh 1fr;
+    grid-template-areas: 
+        "header main"
+        "header main"
+        "header footer"
+    ;
+    background-color: var(--Ivory-Mist);
+    font-family: 'Outfit';
+}
+
+.header {
+    grid-area: header;
+    background-color: var(--Midnight-Blue);
+    color: white;
+}
+
+.logo {
+    padding: 20px 20px 0 20px;
+}
+
+.main {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.search-form {
+    display: flex;
+    background-color: white;
+    padding: 25px;
+    box-shadow: 4px 4px 4px rgba(0, 0,0, 0.2);
+}
+
+.search-form .form-group {
+    width: 100%;
+    padding: 10px;
+}
+
+.search-form input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    box-shadow: 0px 0px 2px rgba(0, 0,0, 0.2);
+}
+
+.search-form button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.add-note {
+    padding: 10px 20px;
+}
+
+.add-note-button {
+    background-color: transparent;
+    border: none;
+    font-family: 'Outfit';
+    font-size: 1rem;
+    font-weight: 700;
+    transition: all 0.2 ease;
+}
+
+.add-note-button:hover {
+    color: grey;
+    cursor: pointer;
+}
+
+.note-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 50px 10px;
+    padding: 0 20px 70px 20px;
+}
+
+.add-note-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.add-note-form input, .add-note-form textarea {
+    padding: 5px;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: var(--Charcoal-Black);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+@media screen and (max-width: 768px){
+    body {
+        grid-template-columns: 1fr;
+        grid-template-rows: 90px 1fr 70px;
+        grid-template-areas: 
+            "header"
+            "main"
+            "footer"
+        ;
+
+        height: 100vh;
+    }
+
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px 20px;
+    }
+
+    .logo {
+        padding: 0;
+    }
+}
