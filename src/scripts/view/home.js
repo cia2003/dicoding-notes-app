@@ -46,12 +46,10 @@ function onNavigateMenu(event) {
 
     switch(page) {
         case "home":
-            console.log("home");
             displayAllNotes('home');
             break;
 
         case "archive":
-            console.log('archive');
             displayAllNotes('archive');
             break;
 
