@@ -28,7 +28,7 @@ body {
         "header footer"
     ;
     background-color: var(--Ivory-Mist);
-    font-family: 'Outfit', monospace;
+    font-family: 'Outfit', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
 }
 
 .header {
@@ -55,7 +55,7 @@ body {
 .add-note-button {
     background-color: transparent;
     border: none;
-    font-family: 'Outfit', monospace;
+    font-family: 'Outfit', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
     font-size: 1rem;
     font-weight: 700;
     transition: all 0.2 ease;
