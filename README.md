@@ -4,7 +4,7 @@
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Links](#links)
+  - [Links](#link)
 - [Author](#author)
 
 ## Overview
