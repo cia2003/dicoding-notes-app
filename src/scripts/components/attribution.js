@@ -1,4 +1,5 @@
 class Attribution extends HTMLElement {
+    static observedAttributes = ["project-owner", "owner-link", "coder-name", "coder-link"];
     _shadowRoot = null;
     _style = null;
 
@@ -7,6 +8,11 @@ class Attribution extends HTMLElement {
 
         this._shadowRoot = this.attachShadow( { mode: 'open'} );
         this._style = document.createElement('style');
+
+        this._projectOwner = this.getAttribute('project-owner');
+        this._ownerLink = this.getAttribute('owner-link');
+        this._coderName = this.getAttribute('coder-name');
+        this._coderLink = this.getAttribute('coder-link');
     }
 
     _emptyContent() {
@@ -28,6 +34,7 @@ class Attribution extends HTMLElement {
             background-color: #123458;
             padding: 5px;
             border-radius: 5px;
+            margin: 0 5px;
         }
 
         .attribution a:hover {
@@ -45,14 +52,34 @@ class Attribution extends HTMLElement {
         this._shadowRoot.appendChild(this._style);
         this._shadowRoot.innerHTML += `
             <div class="attribution">
-                Project by <a href="https://www.dicoding.com/" target="_blank">Dicoding</a>.
-                Coded by <a href="https://github.com/cia2003">Gracia N. S.</a>.
+                Project by <a href="${this._ownerLink}" target="_blank">${this._projectOwner}</a> |
+                Coded by <a href="${this._coderLink}">${this._coderName}</a>
             </div>
         `;
     }
 
     connectedCallback() {
         this.render();
+    }
+
+    attributeChangedCallback(name, oldValue, newValue) {
+        switch (name) {
+            case 'project-owner':
+                this._projectOwner = newValue;
+                break;
+            
+            case 'owner-link':
+                this._ownerLink = newValue;
+                break;
+            
+            case 'coder-name':
+                this._coderName = newValue;
+                break;
+            
+            case 'coder-link':
+                this._coderLink = newValue;
+                break;
+        }
     }
 }
 
