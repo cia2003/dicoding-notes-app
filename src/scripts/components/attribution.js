@@ -53,7 +53,7 @@ class Attribution extends HTMLElement {
         this._shadowRoot.innerHTML += `
             <div class="attribution">
                 Project by <a href="${this._ownerLink}" target="_blank">${this._projectOwner}</a> |
-                Coded by <a href="${this._coderLink}">${this._coderName}</a>
+                Coded by <a href="${this._coderLink}" target="_blank">${this._coderName}</a>
             </div>
         `;
     }
@@ -80,6 +80,8 @@ class Attribution extends HTMLElement {
                 this._coderLink = newValue;
                 break;
         }
+
+        this.render();
     }
 }
 

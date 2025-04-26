@@ -66,16 +66,6 @@ body {
     padding: 0 20px 70px 20px;
 }
 
-.add-note-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.add-note-form input, .add-note-form textarea {
-    padding: 5px;
-}
-
 .footer {
     grid-area: footer;
     background-color: var(--Charcoal-Black);
