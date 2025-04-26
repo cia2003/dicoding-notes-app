@@ -7,7 +7,6 @@ class Attribution extends HTMLElement {
 
         this._shadowRoot = this.attachShadow( { mode: 'open'} );
         this._style = document.createElement('style');
-        this.render();
     }
 
     _emptyContent() {
