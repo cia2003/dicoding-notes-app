@@ -167,7 +167,6 @@ class Notes {
     notesData.splice(targetIndex, 1);
 
     return noteArchiveStatus;
-    // console.log(noteArchiveStatus);
   }
 }
 
