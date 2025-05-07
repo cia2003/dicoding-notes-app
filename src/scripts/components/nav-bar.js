@@ -1,5 +1,3 @@
-// import home from "../view/home.js";
-
 class NavBar extends HTMLElement {
     _shadowRoot = null;
     _style = null;
