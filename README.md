@@ -5,7 +5,7 @@
 - [Overview](#overview)
   - [The challenge](#the-challenge)
 - [Step by Step](#step-by-step)
-  - [how
+  - [How to Run The File)[#how-to-run-the-file]
 - [Author](#author)
 
 ## Overview
@@ -20,7 +20,7 @@ The challenge is to design a note app with some spesifications, that are:
 
 ## Step by Step
 
-### How to run
+### How to Run The File
 1. 
 
 ## Author
