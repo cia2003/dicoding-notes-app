@@ -4,7 +4,8 @@
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Links](#link)
+- [Step by Step](#step-by-step)
+  - [how
 - [Author](#author)
 
 ## Overview
@@ -17,9 +18,10 @@ The challenge is to design a note app with some spesifications, that are:
 2. Display notes, and
 3. Other optional challenge that you can see it more at Dicoding.
 
-### Link
+## Step by Step
 
-- [live URL](https://cia2003.github.io/dicoding-notes-app/)
+### How to run
+1. 
 
 ## Author
 
