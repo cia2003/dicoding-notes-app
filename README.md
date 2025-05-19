@@ -10,6 +10,8 @@
 
 ## Overview
 
+![Screenshot (55)](https://github.com/user-attachments/assets/4109916d-3350-484f-b26f-db329b6af51e)
+
 ### The Challenge
 
 The challenge is to design a note app with some spesifications, that are:
