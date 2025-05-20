@@ -5,8 +5,6 @@
 - [Overview](#overview)
   - [Live URL](#live-url)
   - [The challenge](#the-challenge)
-- [Step by Step](#step-by-step)
-  - [How to Run The File](#how-to-run-the-file)
 - [Author](#author)
 
 ## Overview
