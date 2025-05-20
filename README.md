@@ -17,8 +17,9 @@
 The challenge is to design a note app with some spesifications, that are:
 
 1. Adding notes,
-2. Display notes, and
-3. Other optional challenge that you can see it more at Dicoding.
+2. Display notes,
+3. Use REST API to fetch data, and
+4. Other optional challenge that you can see it more at Dicoding.
 
 ## Step by Step
 
