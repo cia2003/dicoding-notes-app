@@ -25,15 +25,7 @@ The challenge is to design a note app with some spesifications, that are:
 
 ### How to Run The File
 
-1. Go to "<> Code"
-2. Click that button, you can see "download ZIP"
-3. Click "download ZIP"
-4. Put the ZIP file to a desire folder
-5. Extract the ZIP file
-6. Open your Text Editor (I use Visual Studio Code)
-7. Inside your Text Editor, open that folder
-8. Open terminal
-9. Run command "npm run start-dev"
+[Revised code]
 
 ## Author
 
